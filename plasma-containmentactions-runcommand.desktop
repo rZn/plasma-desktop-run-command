@@ -1,0 +1,12 @@
+[Desktop Entry]
+Name=Run Command
+Comment=Mouse action for running a command
+Type=Service
+ServiceTypes=Plasma/ContainmentActions
+X-KDE-Library=plasma_containmentactions_runcommand
+X-KDE-PluginInfo-Author=wsdfhjxc
+X-KDE-PluginInfo-Website=https://github.com/wsdfhjxc/plasma-desktop-run-command
+X-KDE-PluginInfo-Name=org.kde.runcommand
+X-KDE-PluginInfo-Version=0.1
+X-KDE-PluginInfo-License=GPL
+X-KDE-PluginInfo-EnabledByDefault=true
