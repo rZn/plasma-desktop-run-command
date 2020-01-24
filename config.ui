@@ -19,7 +19,11 @@
                 </widget>
             </item>
             <item>
-                <widget class="QLineEdit" name="commandToRun"></widget>
+                <widget class="QLineEdit" name="commandToRun">
+                    <property name="placeholderText">
+                        <string>e.g. konsole</string>
+                    </property>
+                </widget>
             </item>
         </layout>
     </widget>
