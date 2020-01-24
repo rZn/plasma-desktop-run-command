@@ -35,6 +35,9 @@ void RunCommand::save(KConfigGroup& config) {
 }
 
 void RunCommand::runCommand() {
+    if (!commandToRun.isEmpty()) {
+        system(QString("(" + commandToRun + ")&").toStdString().c_str());
+    }
 }
 
 K_EXPORT_PLASMA_CONTAINMENTACTIONS_WITH_JSON(runcommand, RunCommand, "plasma-containmentactions-runcommand.json")
