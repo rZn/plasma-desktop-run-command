@@ -14,6 +14,26 @@ QList<QAction*> RunCommand::contextualActions() {
     return actions;
 }
 
+QWidget* RunCommand::createConfigurationInterface(QWidget* parent) {
+    QWidget* widget = new QWidget(parent);
+    widget->setWindowTitle("Configure Run Command Mouse Action");
+    configUi.setupUi(widget);
+    configUi.commandToRun->setText(commandToRun);
+    return widget;
+}
+
+void RunCommand::configurationAccepted() {
+    commandToRun = configUi.commandToRun->text();
+}
+
+void RunCommand::restore(const KConfigGroup& config) {
+    commandToRun = config.readEntry(QStringLiteral("commandToRun"), "");
+}
+
+void RunCommand::save(KConfigGroup& config) {
+    config.writeEntry(QStringLiteral("commandToRun"), commandToRun);
+}
+
 void RunCommand::runCommand() {
 }
 
