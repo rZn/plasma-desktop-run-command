@@ -9,7 +9,7 @@ This is a simple plugin for the KDE Plasma desktop which allows running a custom
 ## Installation
 In order to compile the plugin, you need to have CMake and Extra CMake Modules installed. The plugin depends on Qt, KF5 and KIO development libraries. Find and install required packages by yourself, as they differ between distributions.
 
-To build the plugin, execute following commands:
+To build the plugin, use following commands:
 
 ```
 mkdir build
@@ -18,11 +18,6 @@ cmake ..
 make
 ```
 
-To install the plugin, use following commands:
+Then, use `sudo make install` to install the plugin.
 
-```
-sudo make install
-plasmashell --replace & disown
-```
-
-To uninstall the plugin, use `sudo make uninstall`.
+If you want to uninstall the plugin, use `sudo make uninstall`.
