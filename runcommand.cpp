@@ -16,7 +16,7 @@ QList<QAction*> RunCommand::contextualActions() {
 
 QWidget* RunCommand::createConfigurationInterface(QWidget* parent) {
     QWidget* widget = new QWidget(parent);
-    widget->setWindowTitle("Configure Run Command Mouse Action");
+    widget->setWindowTitle("Configure Run Command");
     configUi.setupUi(widget);
     configUi.commandToRun->setText(commandToRun);
     return widget;
